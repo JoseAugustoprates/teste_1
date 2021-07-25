@@ -45,13 +45,12 @@ class LoginPage extends StatelessWidget {
                   ),
                   SizedBox(height: 10.0),
                   TextFormField(
-                    obscureText: true,
                     decoration: InputDecoration(
-                      labelText: 'Informe uma senha',
+                      labelText: 'Informe seu e-mail',
                     ),
                     validator: (String? text) {
                       if (text!.isEmpty) {
-                        return 'Informe uma senha';
+                        return 'Informe seu e-mail';
                       } else {
                         return null;
                       }
@@ -59,12 +58,13 @@ class LoginPage extends StatelessWidget {
                   ),
                   SizedBox(height: 10.0),
                   TextFormField(
+                    obscureText: true,
                     decoration: InputDecoration(
-                      labelText: 'Informe seu e-mail',
+                      labelText: 'Informe uma senha',
                     ),
                     validator: (String? text) {
                       if (text!.isEmpty) {
-                        return 'Informe seu e-mail';
+                        return 'Informe uma senha';
                       } else {
                         return null;
                       }
